@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976D1;
+  color: #fff;
+  padding: 25px 15px;
+}
+
+nav a,
+.container button {
+  cursor: pointer;
+}
+
+nav .company-name {
+  font-size: 34px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .company-name:hover {
+  background-color: #1976D1;
+  opacity: 0.8;
+}
+
+nav .fancy-button {
+  text-decoration: none;
+}
+
+nav .button {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #1976D1;
+  padding: 9px 18px;
+  gap: 3px;
+  border-radius: 3px;
+}
+
+nav .button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 12px 15px;
+}
+
+.container a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1976D1;
+}
+
+.container .products-description {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #929292;
+}
+
+.container .share-btn,
+.container .notify-btn,
+.product-details button {
+  background-color: #1976D1;
+  padding: 9px 18px;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  margin-top: 20px;
+  display: block;
+}
+
+.container .notify-btn {
+  margin-top: 0;
+}
+
+.product-details h3,
+.product-details h4 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* Cart */
+.cart-item {
+  display: inline-block;
+  background-color: lightgray;
+  padding: 15px 23px;
+  width: 215px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+

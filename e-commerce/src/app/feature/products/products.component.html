@@ -1,0 +1,12 @@
+<h1>Products</h1>
+
+<div *ngFor="let product of productService.products">
+  <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">{{ product.name }}</a>
+  <p *ngIf="product.description" class="products-description">
+    Description: {{ product.description }}
+  </p>
+  <button class="share-btn" (click)="productService.share()">Share</button>
+
+  <!-- in questo caso faccio il property binding per collegare productList (di tipo interfaccia, all'array ciclato qui) -->
+  <app-product-alerts [productList]="product"></app-product-alerts>
+</div>
